@@ -8,10 +8,19 @@
 			document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";
 
 		}
+
+		function apagaLampada(){
+			document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+		}
+
+		function quebraLampapada(){
+			document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+		}
 	</script>
 </head>
 <body>
 	<h1>Acenda a lampada</h1>
-	<img src="_imagens/lampada-apagada.jpg" id="luz" onmouseover="acendeLampada()" />
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" 
+		onclick="quebraLampapada()"/>
 </body>
 </html>

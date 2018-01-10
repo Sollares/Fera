@@ -1,0 +1,41 @@
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory.
+[1mdiff --git a/TESTE. SCRIPT_2.html b/TESTE. SCRIPT_2.html[m
+[1mindex eee1ec9..0d50636 100644[m
+[1m--- a/TESTE. SCRIPT_2.html[m	
+[1m+++ b/TESTE. SCRIPT_2.html[m	
+[36m@@ -8,10 +8,19 @@[m
+ 			document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";[m
+ [m
+ 		}[m
+[32m+[m
+[32m+[m		[32mfunction apagaLampada(){[m
+[32m+[m			[32mdocument.getElementById("luz").src="_imagens/lampada-apagada.jpg";[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m		[32mfunction quebraLampapada(){[m
+[32m+[m			[32mdocument.getElementById("luz").src="_imagens/lampada-quebrada.jpg";[m
+[32m+[m		[32m}[m
+ 	</script>[m
+ </head>[m
+ <body>[m
+ 	<h1>Acenda a lampada</h1>[m
+[31m-	<img src="_imagens/lampada-apagada.jpg" id="luz" onmouseover="acendeLampada()" />[m
+[32m+[m	[32m<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()"[m[41m [m
+[32m+[m		[32monclick="quebraLampapada()"/>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 16e2481..3cd16a0 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -63,7 +63,7 @@[m
+ 					<tr><td class="ce">Memória Interna</td><td class="cd">12GB</td></tr>[m
+ 			</table>[m
+ [m
+[31m-		<h2>Como funciona</h2>[m
+[32m+[m		[32m<h1>Como funciona</h1>[m
+ 			<p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça[m
+ 			</p>[m
+ [m
